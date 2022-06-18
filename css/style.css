@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #3b5998;
+    --backgroud-color: rgb(196, 196, 226);
+    --sign-up: rgb(31, 217, 31);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--backgroud-color) ;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    background-color: var(--primary-color);
+    height: 90px;
+    width: 100%;
+}
+
+#header .head {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 10px;
+    color: white;
+}
+
+#header .head h1 {
+    font-size: 2.5rem;
+}
+
+#header .head .sign {
+    margin-top: 55px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color:  var(--sign-up) ;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    height: fit-content;
+    bottom: 5px;
+}
+
+#lower {
+    background-color: white;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#lower .lower {
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+#lower .lower span {
+    font-size: 20px;
+
+}
+
+#lower .lower .user {
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 1px 10px;
+}
+
+#lower .lower .user::placeholder {
+    color: #aaa;
+}
+
+#lower .lower .user:focus {
+    border: solid  var(--backgroud-color);
+}
+
+#lower .lower .button {
+    background-color: var(--primary-color);
+    width: 335px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+}
+
+#lower .lower .button:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    opacity: .7;
+}
